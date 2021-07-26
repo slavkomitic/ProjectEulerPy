@@ -1,5 +1,8 @@
-def largesum(numbers):
-	return str(sum(numbers))[:10]
+def largesum(numbers, digits=10):
+	"""
+	finds and returns first n-<digits> out of the sum of all numbers in the input list
+	"""
+	return str(sum(numbers))[:digits]
 
 if __name__ == '__main__':
 	number_text = """37107287533902102798797998220837590246510135740250
